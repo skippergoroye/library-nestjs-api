@@ -9,7 +9,6 @@ dotenv.config();
 @Module({
   imports: [
     MongooseModule.forRoot(process.env.DB_URI),
-    // MongooseModule.forRoot("mongodb+srv://skippertech:skipper123Tech@nodejs.79xtnsg.mongodb.net/Library-nest-api?retryWrites=true&w=majority"),
     BookModule],
   controllers: [AppController],
   providers: [AppService],
